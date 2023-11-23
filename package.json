@@ -4,8 +4,11 @@
   "description": "Some interesting questions to revise",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "output": "node output.js",
+    "tasks": "node tasks.js"
+
   },
-  "author": "",
+  "author": "Maksym Shokin",
   "license": "ISC"
 }
