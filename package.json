@@ -7,7 +7,8 @@
     "start": "node index.js",
     "output": "node output.js",
     "tasks": "node tasks.js",
-    "fib": "node fib.js"
+    "fib": "node fib.js",
+    "practice": "node practice.js"
 
   },
   "author": "Maksym Shokin",
