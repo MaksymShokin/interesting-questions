@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node index.js",
     "output": "node output.js",
-    "tasks": "node tasks.js"
+    "tasks": "node tasks.js",
+    "fib": "node fib.js"
 
   },
   "author": "Maksym Shokin",
