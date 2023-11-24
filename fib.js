@@ -7,3 +7,17 @@ const fib = n => {
 };
 
 console.log(fib(4));
+
+function fibonacciMemoization(n, memo = {}) {
+  if (n <= 1) {
+    return n;
+  }
+
+  if (memo[n] !== undefined) {
+    return memo[n];
+  }
+
+  memo[n] =
+    fibonacciMemoization(n - 1, memo) + fibonacciMemoization(n - 2, memo);
+  return memo[n];
+}
