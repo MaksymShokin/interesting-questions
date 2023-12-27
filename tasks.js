@@ -65,4 +65,4 @@ function sum2(a) {
   return myFunc;
 }
 
-console.log(sum2(1)(2)(4)); //
+console.log(sum2(1)(2)(4).valueOf); //
