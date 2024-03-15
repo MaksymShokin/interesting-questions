@@ -11,6 +11,21 @@ const sum = (...args) => {
 console.log(sum(4, 6, 8, 10).value); // output - 28
 console.log(sum(4)(6)(8)(10).value); // output - 28
 
+const sumNoValue = (n, ...rest) => {
+  if (rest.length > 0) {
+    return rest.reduce((acc, val) => acc + val, 0) + n;
+  }
+
+  const func = x => sum(n + x);
+
+  func.toString = () => n;
+
+  return func;
+};
+
+console.log(sumNoValue(4, 6, 8, 10)); // output - 28
+console.log(sumNoValue(4)(6)(8)(10)); // Output: 28
+
 function sum1(a) {
   let ans = a;
 
