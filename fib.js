@@ -21,3 +21,5 @@ function fibonacciMemoization(n, memo = {}) {
     fibonacciMemoization(n - 1, memo) + fibonacciMemoization(n - 2, memo);
   return memo[n];
 }
+
+console.log(fibonacciMemoization(6));
